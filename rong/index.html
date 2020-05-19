@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿造</title>
+    <link rel="stylesheet" href="./reset.css">
+
+    <style>
+        .main {
+            width: 1120px;
+            height: 500px;
+            margin: 0 auto;
+            padding-top: 50px;
+            background-color: #EAEAEF;
+        }
+
+        .node {
+            float: left;
+            width: 540px;
+            height: 120px;
+
+            margin-left: 10px;
+            margin-right: 10px;
+
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            transition: all .3s;
+        }
+
+        .node:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+        }
+
+        .node-up {
+            background-color: #F4F4F4;
+            height: 60px;
+
+        }
+
+        .node-left-img {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 5px;
+            margin-top: 5px;
+            background-color: #bfa;
+            border-radius: 50%;
+        }
+
+        .node-left-info {
+            float: left;
+            margin-left: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .node-left-configs {
+            margin-top: 10px
+        }
+
+        .node-left-config {
+            float: left;
+            margin-right: 5px;
+
+            padding-left: 8px;
+            padding-right: 8px;
+
+            height: 20px;
+            line-height: 20px;
+            background-color: #E5E5E5;
+            /*background-color: #bfa;*/
+
+            border-radius: 10px;
+        }
+
+        .node-down {
+            background-color: #fff;
+            height: 60px;
+        }
+
+        .node-down-item {
+            float: left;
+            width: 59px;
+            /*margin-right: 2px;*/
+            margin-top: 8px;
+            /*background-color: #bfa;*/
+        }
+
+        .node-down-img {
+            width: 20px;
+            height: 20px;
+
+            margin: 5px auto 0;
+
+            border-radius: 50%;
+            background-color: #bfa;
+        }
+
+        .node-down-end-img {
+            width: 20px;
+            height: 20px;
+            margin: 12px auto 0;
+
+            border-radius: 50%;
+
+            background-color: #bfa;
+        }
+
+        .node-down-info {
+            margin: 4px auto 0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .line {
+            float: left;
+            width: 1px;
+            height: 40px;
+            margin-top: 10px;
+
+            background-color: #EAEAEF;
+        }
+
+        /*解决高度塌陷*/
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main clearfix">
+    <div class="node">
+        <div class="node-up clearfix">
+            <div class="node-up-left">
+                <div class="node-left-img">
+
+                </div>
+
+                <div class="node-left-info">
+                    <div class="node-left-info-name">
+                        <span>00000000</span> ☆
+                    </div>
+                    <ul class="node-left-configs">
+                        <li class="node-left-config"><span>数据传输配置</span></li>
+                        <li class="node-left-config"><span>异常提醒</span></li>
+                        <li class="node-left-config"><span>自定义预警</span></li>
+                        <li class="node-left-config"><span>添加标签</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="node-down">
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-end-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="node ">
+        <div class="node-up clearfix">
+            <div class="node-up-left">
+                <div class="node-left-img">
+
+                </div>
+
+                <div class="node-left-info">
+                    <div class="node-left-info-name">
+                        <span>00000000</span> ☆
+                    </div>
+                    <ul class="node-left-configs">
+                        <li class="node-left-config"><span>数据传输配置</span></li>
+                        <li class="node-left-config"><span>异常提醒</span></li>
+                        <li class="node-left-config"><span>自定义预警</span></li>
+                        <li class="node-left-config"><span>添加标签</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="node-down">
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-img"></div>
+                <div class="node-down-info">19.2</div>
+            </div>
+            <div class="line"></div>
+            <div class="node-down-item">
+                <div class="node-down-end-img"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
